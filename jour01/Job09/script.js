@@ -2,7 +2,7 @@ function asc(a, b) {
     return a - b
 }
 
-function dsc(a,b) {
+function dsc(a, b) {
     return b - a
 }
 
