@@ -8,23 +8,20 @@
 </head>
 <body class="flex flex-col min-h-screen">   
     <header>
-        <nav>
-            <ul>
-                <li>Accueil</li>
-                <li>Horloge</li>
-                <li>Chronometre</li>
-                <li>Reveil</li>
-                <li>Minuteur</li>
+        <nav class="bg-gray-800 p-4">
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="text-white hover:text-gray-400">Accueil</a></li>
+                <li><a href="horloge.html" class="text-white hover:text-gray-400">Horloge</a></li>
+                <li><a href="chrono.html" class="text-white hover:text-gray-400">Chronometre</a></li>
+                <li><a href="reveil.html" class="text-white hover:text-gray-400">Reveil</a></li>
+                <li><a href="minuteur.html" class="text-white hover:text-gray-400">Minuteur</a></li>
             </ul>
         </nav>
     </header>
     <main class="flex flex-col min-h-screen grow p-6">
         <h1 class="text-2xl font-bold mb-4">Bienvenue sur la page d'accueil</h1>
-        <p class="max-w-md mx-auto bg-white p-6 rounded shadow-md">
-            Ceci est la page d'accueil de notre site. Utilisez la navigation 
-        </p>
     </main>
-    <footer class="bg-gray-800 py-4 mt-8 fixed bottom-0 left-0 right-0 w-full">
+    <footer class="bg-gray-800 py-4 mt-8 bottom-0 left-0 right-0 w-full">
         <p class="text-center text-gray-300 text-sm">© 2026 Mon Site Web</p>
     </footer>
     <script src="assets/js/utils.js"></script>

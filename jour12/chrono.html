@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/output.css">
+</head>
+<body class="flex flex-col min-h-screen">   
+    <header>
+        <nav class="bg-gray-800 p-4">
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="text-white hover:text-gray-400">Accueil</a></li>
+                <li><a href="horloge.html" class="text-white hover:text-gray-400">Horloge</a></li>
+                <li><a href="chrono.html" class="text-white hover:text-gray-400">Chronometre</a></li>
+                <li><a href="reveil.html" class="text-white hover:text-gray-400">Reveil</a></li>
+                <li><a href="minuteur.html" class="text-white hover:text-gray-400">Minuteur</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex flex-col min-h-screen grow p-6">
+        <div id="chrono" class="text-4xl font-mono text-center"></div>
+        <div>
+            <input type="button" value="Démarrer" id="start-chrono" class="mt-4 p-2 bg-blue-500 text-white rounded hover:bg-blue-600 cursor-pointer" />
+            <input type="button" value="Enregistrer Tour" id="lap-chrono" class="mt-4 p-2 bg-green-500 text-white rounded hover:bg-green-600 cursor-pointer" />
+            <input type="button" value="Réinitialiser Chronomètre" id="reset-chrono" class="mt-4 p-2 bg-gray-500 text-white rounded hover:bg-gray-600 cursor-pointer" />
+        </div>
+        <div class="mt-6">
+            <h3 class="text-xl font-semibold mb-2">Tours enregistrés :</h3>
+            <ul id="recorded-times" class="list-disc list-inside"></ul>
+        </div>
+    </main>
+    <footer class="bg-gray-800 py-4 mt-8 bottom-0 left-0 right-0 w-full">
+        <p class="text-center text-gray-300 text-sm">© 2026 Mon Site Web</p>
+    </footer>
+    <script src="assets/js/chrono.js"></script>
+</body>
+</html>
