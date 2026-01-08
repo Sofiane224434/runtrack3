@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/output.css">
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.20/index.global.min.js'></script>
 </head>
 <body class="flex flex-col min-h-screen">
     <header></header>
-    <main class="grow p-6"></main>
-    <footer class="bg-gray-800 py-4 mt-8 fixed bottom-0 left-0 right-0 w-full">
+    <main class="grow p-6 mb-20">
+        <div id='calendar' class="max-w-4xl mx-auto" style="height: 600px;"></div>
+    </main>
+    <footer class="bg-gray-800 py-4 mt-8 w-full">
         <p class="text-center text-gray-300 text-sm">© 2026 Mon Site Web</p>
     </footer>
     <script src="assets/js/utils.js"></script>
 </body>
+<script src="assets/js/calendar.js"></script>
 </html>
